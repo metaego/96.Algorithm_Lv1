@@ -17,4 +17,5 @@
   - **arrMean.py** : 평균 구하기
   - **arrAdd.py** : 행렬의 덧셈
   - **evenNumOddNum.py** : 짝수와 홀수
-  - **positionalNum.py** : 자릿수 더하기<br><br>
+  - **positionalNum.py** : 자릿수 더하기
+  - **intSqurRoot.p** : 정수 제곱근 판별<br><br>
