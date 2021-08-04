@@ -18,4 +18,5 @@
   - **arrAdd.py** : 행렬의 덧셈
   - **evenNumOddNum.py** : 짝수와 홀수
   - **positionalNum.py** : 자릿수 더하기
-  - **intSqurRoot.p** : 정수 제곱근 판별<br><br>
+  - **intSqurRoot.p** : 정수 제곱근 판별
+  - **strBase.py** : 문자열 다루기 기본<br><br>
