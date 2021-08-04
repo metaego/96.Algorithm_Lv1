@@ -19,8 +19,9 @@
   - **evenNumOddNum.py** : 짝수와 홀수
   - **positionalNum.py** : 자릿수 더하기
   - **intSqurRoot.p** : 정수 제곱근 판별
-  - **strBase.py** : 문자열 다루기 기본
+  - **strBase.py** : 문자열 다루기 기본<br><br>
 
   **[update: 0804]**
   - **intDisorder.py** : 정수 내림차순으로 배치하기 
-  - **numReverseArr.py** : 자연수 뒤집어 배열로 만들기<br><br>
+  - **numReverseArr.py** : 자연수 뒤집어 배열로 만들기
+  - **phone_number.py** : 핸드폰 번호 가리기<br><br>
