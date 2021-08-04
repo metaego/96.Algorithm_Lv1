@@ -19,4 +19,5 @@
   - **evenNumOddNum.py** : 짝수와 홀수
   - **positionalNum.py** : 자릿수 더하기
   - **intSqurRoot.p** : 정수 제곱근 판별
-  - **strBase.py** : 문자열 다루기 기본<br><br>
+  - **strBase.py** : 문자열 다루기 기본
+  - **intDisorder.py** : 정수 내림차순으로 배치하기 <br><br>
