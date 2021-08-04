@@ -24,4 +24,5 @@
   **[update: 0804]**
   - **intDisorder.py** : 정수 내림차순으로 배치하기 
   - **numReverseArr.py** : 자연수 뒤집어 배열로 만들기
-  - **phone_number.py** : 핸드폰 번호 가리기<br><br>
+  - **phone_number.py** : 핸드폰 번호 가리기
+  - **harshadNum.py** : 하샤드 수<br><br>
