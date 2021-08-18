@@ -117,12 +117,43 @@ print('='*100)
 
 '''
 
-# num1 = int(input(""))
-# num2 = int(input(""))
-num1, num2 = int(input('')).split( )
+num1, num2 = map(int, input().split( ))
+
+# num1, num2 = int(input('')).split( )
 print('{} * {} = {}'.format(num1, num2, num1*num2))
 print('{} / {} = {}'.format(num1, num2, num1//num2))
 # 다른 사람 코드
 # a, b = input().split( )
 # print("%d * %d = %d" % (int(a), int(b), int(a)*int(b)))
 # print("%d / %d = %d" % (int(a), int(b), int(a)/int(b)))
+
+
+print()
+print('='*100)
+'''
+실수 2개와 한 개의 문자를 입력 받아 출력하되 실수는 반올림하여 소수 둘째자리까지 출력하는 프로그램을작성하시오.
+(C, C++, Java 의 경우 실수는 "double"로 선언하세요.)
+'''
+'''
+입력 예
+12.2536
+526.129535
+A
+
+출력 예
+12.25
+526.13
+A
+'''
+
+# flatNum1 = 12.2536
+# flatNum2 = 526.129535
+# varchar = 'A'
+
+flatNum1 = float(input())
+flatNum2 = float(input())
+varchar = input()
+
+print('%.2f' % round(flatNum1, 2))
+print('%.2f' % round(flatNum2, 2))
+print(varchar)
