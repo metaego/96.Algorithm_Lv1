@@ -117,7 +117,7 @@ print('='*100)
 
 '''
 
-num1, num2 = map(int, input().split( ))
+# num1, num2 = map(int, input().split( ))
 
 # num1, num2 = int(input('')).split( )
 print('{} * {} = {}'.format(num1, num2, num1*num2))
@@ -150,10 +150,147 @@ A
 # flatNum2 = 526.129535
 # varchar = 'A'
 
-flatNum1 = float(input())
-flatNum2 = float(input())
-varchar = input()
+# flatNum1 = float(input())
+# flatNum2 = float(input())
+# varchar = input()
 
-print('%.2f' % round(flatNum1, 2))
-print('%.2f' % round(flatNum2, 2))
-print(varchar)
+# print('%.2f' % round(flatNum1, 2))
+# print('%.2f' % round(flatNum2, 2))
+# print(varchar)
+
+
+print()
+print('='*100)
+'''
+세 개의 실수를 입력 받아 반올림하여 소수 셋째 자리까지 출력하는 프로그램을 작성하시오.
+'''
+'''
+입력 예
+1.2568
+95.21438
+526.851364
+
+출력 예
+1.257
+95.214
+526.851
+'''
+# floatNum1 = float(input())
+# floatNum2 = float(input())
+# floatNum3 = float(input())
+
+# print('%.3f' % round(floatNum1, 3))
+# print('%.3f' % round(floatNum2, 3))
+# print('%.3f' % round(floatNum3, 3))
+
+
+
+print()
+print('='*100)
+'''
+세 개의 정수형 변수를 선언하고 각 변수에 10 20 30을 대입한 후 
+그 변수를 이용하여 출력 예와 같이 출력하는 프로그램을 작성하시오.
+'''
+'''
+출력 예
+10 + 20 = 30
+'''
+num1 = 10
+num2 = 20
+num3 = 30
+print(f'{num1} + {num2} = {num3}')
+
+
+
+print()
+print('='*100)
+'''
+실수형 변수를 2개 선언한 후 각각에 80.5 22.34를 대입한 후 두 수의 합을 구하여 
+각각의 숫자를 10칸씩 오른쪽에 맞추어 소수 둘째자리까지 출력하는 프로그램을 작성하시오.
+'''
+'''
+출력 예
+     80.50     22.34    102.84
+'''
+num1 = 80.5
+num2 = 22.34
+
+print('%10.2f%10.2f%10.2f' % (num1, num2, num1+num2))
+
+
+
+print()
+print('='*100)
+'''
+정수형 변수 한 개를 선언하여 50을 대입하고 
+실수형 변수 한 개를 선언하여 100.12를 대입한 후 
+다음과 같이 출력되는 프로그램을 작성하시오.
+(결과값은 소수점 이하에서 반올림) 
+'''
+'''
+출력 예
+100.12 * 50 = 5006
+'''
+intnum = 50
+floatnum = 100.12
+print(f'{floatnum} * {intnum} = {int(round(floatnum*intnum, 1))}')
+
+
+
+
+print()
+print('='*100)
+'''
+세 개의 정수를 입력받아 합과 평균을 출력하는 프로그램을 작성하시오.
+(단 평균은 소수 이하를 버림하여 정수 부분만 출력한다.)
+'''
+'''
+입력 예
+10 20 30
+
+출력 예
+sum = 170
+avg = 56
+'''
+
+# n1, n2, n3 = map(int, input().split())
+# print('sum =', n1 +n2 +n3)
+# print('avg =', (n1 +n2 +n3)//3)
+
+
+print()
+print('='*100)
+'''
+실수의 yard(야드)를 입력받아 cm(센티미터)로 환산하여 
+입력값과 환산한 값을 출력 예와 같이 소수 둘째자리에서 반올림하여 
+첫째자리까지 출력하는 프로그램을 작성하시오. (단 1야드 = 91.44cm로 한다.)  
+입력은 "yard? "라고 먼저 출력하고, 실수를 입력받는다.  실수는 "double"로 한다.
+'''
+'''
+입력 예
+yard? 10.1
+
+출력 예
+10.1yard = 923.5cm
+'''
+# yard = float(input("yard? "))
+# yardPerCM = 91.44
+# print('%.1fyard = %.1fcm' % (yard, round(yard*yardPerCM, 2)))
+
+
+
+print()
+print('='*100)
+'''
+1야드(yd)는 91.44cm이고 1인치(in)는 2.54cm이다.
+2.1야드와 10.5인치를 각각 cm로 변환하여 다음 형식에 맞추어 소수 첫째자리까지 출력하시오.​
+'''
+'''
+출력 예
+ 2.1yd = 192.0cm
+10.5in =  26.7cm
+'''
+yd = 91.44
+inch = 2.54
+print('%6s = %5.1fcm' % ('2.1yd', 2.1*yd))
+print('%6s = %5.1fcm' % ('10.5in', 10.5*inch))
