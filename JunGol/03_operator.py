@@ -39,9 +39,37 @@ print('='*100)
 # 한 개의 정수를 입력 받아서 후치증가 연산자를 사용하여 출력한 후 
 # 전치 증가 연산자를 사용하여 출력하는 프로그램을 작성하시오.
 
-num = int(input())
+# num = int(input())
 
-print(num)
-num += 1
-num +=1
-print(num)
+# print(num)
+# num += 1
+# num +=1
+# print(num)
+
+
+
+print()
+print('='*100)
+# 두 개의 정수를 입력받아서  
+# 첫 번째수는 후치 증가 연산자를 사용하고 
+# 두 번째 수는 전치 감소 연산자를 사용하여 
+# 두 수의 곱을 구한 후 
+# 각각의 값을 출력하는 프로그램을 작성하시오.
+
+# python 사용자는 두 번째 수를 1감소시키고 두 수의 곱을 구한후 첫 번째 수를 1증가시킨다. 
+# 세 수를 출력한다.
+'''
+입력 예
+10 20
+
+출력 예
+11 19 190
+'''
+
+num1, num2 = map(int, input().split())
+
+num1AfterAdd = num1
+num1AfterAdd += 1
+num2 -= 1 # 전치 감소 연산자
+multipNum = num1*num2
+print(num1AfterAdd, num2, num1*num2)
