@@ -66,13 +66,13 @@ print('='*100)
 11 19 190
 '''
 
-num1, num2 = map(int, input().split())
+# num1, num2 = map(int, input().split())
 
-num1AfterAdd = num1
-num1AfterAdd += 1
-num2 -= 1 # 전치 감소 연산자
-multipNum = num1*num2
-print(num1AfterAdd, num2, num1*num2)
+# num1AfterAdd = num1
+# num1AfterAdd += 1
+# num2 -= 1 # 전치 감소 연산자
+# multipNum = num1*num2
+# print(num1AfterAdd, num2, num1*num2)
 
 
 
@@ -92,14 +92,38 @@ print('='*100)
 1
 0
 '''
+# num1, num2 = map(int, input().split())
+
+# if num1 == num2:
+#     print(1)
+# else:
+#     print(0)
+
+# if num1 != num2:
+#     print(1)
+# else:
+#     print(0)
+
+    
+print()
+print('='*100)
+'''
+두 개의 정수를 입력받아서 다음과 같이 4가지 관계연산자의 결과를 출력하시오.
+이때 입력받은 두 정수를 이용하여 출력하시오.
+ (JAVA는 1이면 true, 0이면 false를 출력한다.)
+'''
+'''
+입력 예
+4 5
+
+출력 예
+4 > 5 --- 0
+4 < 5 --- 1
+4 >= 5 --- 0
+4 <= 5 --- 1
+'''
 num1, num2 = map(int, input().split())
-
-if num1 == num2:
-    print(1)
-else:
-    print(0)
-
-if num1 != num2:
-    print(1)
-else:
-    print(0)
+print(num1, '>', num2, '---', int(num1 > num2))
+print(num1, '<', num2, '---', int(num1 < num2))
+print(num1, '>=', num2, '---', int(num1 >= num2))
+print(num1, '<=', num2, '---', int(num1 <= num2))
