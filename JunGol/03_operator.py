@@ -140,3 +140,77 @@ print('='*100)
 
 ​hint : 정수 a를 입력받은 후 boolean c = (a != 0);을 실행하면 c에 a의 논리값이 저장된다.
 '''
+'''
+입력 예
+2 0
+
+출력 예
+0 1
+
+[JAVA]
+false true
+'''
+# num1, num2 = map(int, input().split())
+# print(int((num1 != 0) and (num2 != 0)), int((num1 != 0) or (num2 != 0)))
+
+
+print()
+print('='*100)
+'''
+3개의 정수를 입력 받아 첫 번째 수가 가장 크면 1 아니면 0을 출력하고 세 개의 수가 모두 같으면 1 아니면 0을 출력하는 프로그램을 작성하시오.
+(JAVA는 1이면 true, 0이면 false를 출력한다.)
+'''
+'''
+입력 예
+10 9 9
+
+출력 예
+1 0
+'''
+# num1, num2, num3 = map(int, input().split())
+# if (num1 > num2) and (num1 > num3): 
+#     print(1)
+# else:
+#     print(0)
+
+# if (num1 == num2) and (num1 == num3) :
+#     print(1)
+# else:
+#     print(0)
+
+
+
+print()
+print('='*100)
+'''
+국어 영어 수학 컴퓨터 과목의 점수를 정수로 입력받아서 
+총점과 평균을 구하는 프로그램을 작성하시오. 
+(단 평균의 소수점 이하는 버림 한다.)
+'''
+'''
+입력 예
+70 95 63 100
+
+출력 예
+sum 328
+avg 82
+'''
+# subj1, subj2, subj3, subj4 = map(int, input().split())
+
+# print('sum %d' % (subj1 + subj2 + subj3 +subj4))
+# print('avg %d' % ((subj1+subj2+subj3+subj4)//4))
+
+print()
+print('='*100)
+'''
+두 정수를 입력받아서 나눈 몫과 나머지를 다음과 같은 형식으로 출력하는 프로그램을 작성하시오.
+'''
+'''
+입력 예
+35 10
+
+출력 예
+35 / 10 = 3...5
+'''
+num1, num2 = map(int, input().split())
+print('%d / %d = %d...%d' %(num1, num2, num1//num2, num1%num2))
