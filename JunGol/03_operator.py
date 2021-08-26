@@ -212,5 +212,82 @@ print('='*100)
 출력 예
 35 / 10 = 3...5
 '''
-num1, num2 = map(int, input().split())
-print('%d / %d = %d...%d' %(num1, num2, num1//num2, num1%num2))
+# num1, num2 = map(int, input().split())
+# print('%d / %d = %d...%d' %(num1, num2, num1//num2, num1%num2))
+
+print()
+print('='*100)
+'''
+직사각형의 가로와 세로의 길이를 정수형 값으로 입력받은 후 
+가로의 길이는 5 증가시키고 세로의 길이는 2배하여 저장한 후 
+가로의 길이 세로의 길이 넓이를 차례로 출력하는 프로그램을 작성하시오.
+'''
+'''
+입력 예
+20 15
+
+출력예
+width = 25
+length = 30
+area = 750
+'''
+# width, length = map(int, input().split())
+# width += 5
+# length *= 2
+# print(f'width = {width}') 
+# print(f'length = {length}') 
+# print(f'area = {width*length}') 
+
+
+
+print()
+print('='*100)
+'''
+두 정수를 입력받아 
+첫 번째 수는 전치증가연산자를 사용하고 
+두 번째 수는 후치감소연산자를 사용하여 출력하고 
+바뀐 값을 다시 출력하는 프로그램을 작성하시오.
+'''
+'''
+입력 예
+10 15
+
+출력 예
+11 15
+11 14
+'''
+# num1, num2 = map(int, input().split())
+# num1add = num1
+# num1add += 1
+
+
+
+
+
+
+
+
+
+
+
+print()
+print('='*100)
+'''
+민수와 기영이의 키와 몸무게를 입력받아 
+민수가 키도 크고 몸무게도 크면 1 그렇지 않으면 0을 출력하는 프로그램을 작성하시오.
+(JAVA는 1 이면 true, 0 이면 false를 출력한다.)
+'''
+'''
+입력 예
+150 35
+145 35
+
+출력 예
+'''
+min_heigh, min_weight = map(int, input().split())
+ki_heigh, ki_weight = map(int, input().split())
+
+if (min_heigh > ki_heigh) and (min_weight > ki_weight):
+    print(1)
+else:
+    print(0)
