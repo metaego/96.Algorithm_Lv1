@@ -53,5 +53,26 @@ print('='*100)
 출력 예
 76.7
 '''
-sub1, sub2, sub3 = map(int, input().split())
-print('%.1f' % ((sub1+sub2+sub3)/3))
+# sub1, sub2, sub3 = map(int, input().split())
+# print('%.1f' % ((sub1+sub2+sub3)/3))
+
+
+print()
+print('='*100)
+'''
+실수로 된 3과목의 점수를 입력받아 
+총점은 정수부분의 합계를 출력하고 
+평균은 실수의 평균을 구한 뒤 
+정수부분만 출력하는 프로그램을 작성하시오.
+'''
+'''
+입력 예
+70.5 95.5 68.5
+
+출력 예
+sum 233
+avg 78
+'''
+sub1, sub2, sub3 = map(float, input().split())
+print('sum {}'.format(int(sub1) + int(sub2)+ int(sub3)))
+print('avg {}'.format(int((sub1+sub2+sub3)/3)))
