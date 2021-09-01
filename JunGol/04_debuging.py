@@ -73,6 +73,9 @@ print('='*100)
 sum 233
 avg 78
 '''
-sub1, sub2, sub3 = map(float, input().split())
-print('sum {}'.format(int(sub1) + int(sub2)+ int(sub3)))
-print('avg {}'.format(int((sub1+sub2+sub3)/3)))
+# sub1, sub2, sub3 = map(float, input().split())
+# print('sum {}'.format(int(sub1) + int(sub2)+ int(sub3)))
+# print('avg {}'.format(int((sub1+sub2+sub3)/3)))
+
+print()
+print('='*100)
