@@ -110,8 +110,36 @@ Index? 3
 출력 예
 ['Beijing', 'London', 'Paris']
 '''
-lst = []
-for i in range(6):
-    lst.append(str(input('Element? ')))
-idx_number = int(input('Index? '))
-print(lst[idx_number:])
+# lst = []
+# for i in range(6):
+#     lst.append(str(input('Element? ')))
+# idx_number = int(input('Index? '))
+# print(lst[idx_number:])
+
+print()
+print('='*100)
+'''
+원소 6개짜리 리스트를 입력받아 생성한 후, 
+홀수 번째 원소가 앞으로 오고 짝수 번째 원소가 뒤로 오도록 리스트를 재구성하여 출력하는 
+프로그램을 작성하시오.​
+'''
+'''
+입력 예
+Element? Seoul
+Element? New York City	
+Element? Tokyo	
+Element? Beijing	
+Element? London	
+Element? Paris
+
+출력 예
+['Seoul', 'Tokyo', 'London', 'New York City', 'Beijing', 'Paris']
+'''
+# lst = []
+# for i in range(6):
+#     lst.append(input('Element? '))
+# print(lst[0::2]+lst[1::2])
+
+print()
+print('='*100)
+
