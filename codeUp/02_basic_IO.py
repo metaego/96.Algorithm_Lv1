@@ -180,7 +180,8 @@ print(s)
 문자열끼리 더하기(+)를 실행하면,
 두 문자열을 합쳐 연결한(concatenate) 결과를 만들어 낸다.
 '''
-w1, w2 = input().split()
+
 # s = w1 + w2
 # print(s)
+w1, w2 = input().split()
 print(w1, w2,sep='')
