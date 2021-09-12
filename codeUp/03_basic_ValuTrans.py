@@ -132,5 +132,5 @@ format(수, ".2f") 를 사용하면 원하는 자리까지의 정확도로 반�
 그 과정에서 아주 작은 부분이 저장되지 않고 사라지는 잘림(truncation) 오차가 자주 
 발생하기 때문이다.
 '''
-a=float(input())
-print('%.2f' % a )
+# a=float(input())
+# print('%.2f' % a )
