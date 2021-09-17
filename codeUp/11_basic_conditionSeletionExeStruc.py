@@ -34,3 +34,11 @@ a를 2로 나눈 나머지가 0, 즉 짝수이면 True 가 되고, 아니면 Fal
 if a%2==0 : #a가 짝수라면 ... 
 와 같은 의미가 된다. 짝수가 아니라면 들여쓰기로 작성된 부분들은 실행되지 않는다.
 '''
+a, b, c = input().split()
+a, b, c = int(a), int(b), int(c)
+if a%2 == 0:
+    print(a)
+if b%2 == 0:
+    print(b)
+if c%2 == 0:
+    print(c)
