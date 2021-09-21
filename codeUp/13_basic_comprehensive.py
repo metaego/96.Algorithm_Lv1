@@ -633,41 +633,72 @@ d = [[0 for j in range(20)] for i in range(20)]
 '''
 
 '''
-d=[]
+# d=[]
 
-for i in range(19):
-    d.append(input().split())
+# for i in range(20):
+#     d.append(input().split())
 
-n = int(input())
+# n = int(input())
 
-# for i in range(n):
-#     x, y = map(int, input().split())
+# # for i in range(n):
+# #     x, y = map(int, input().split())
+# #     for j in range(1, 20):
+# #         if d[x][j] == 0:
+# #             d[x][j] = 1
+# #         else:
+# #             d[x][j] = 0
+
+# #         if d[j][y] == 0:
+# #             d[j][y] = 1
+# #         else:
+# #             d[j][y] = 0
+
+# for i in range(n) :
+#     x,y=input().split()
+#     for j in range(1, 20) :
+#         if d[j][int(y)]==0 :
+#             d[j][int(y)-1]=1
+#         else :
+#             d[j][int(y)]=0
+
+#         if d[int(x)][j]==0 :
+#             d[int(x)][j]=1
+#         else :
+#             d[int(x)][j]=0
+
+
+# for i in range(1, 20):
 #     for j in range(1, 20):
-#         if d[x][j] == 0:
-#             d[x][j] = 1
-#         else:
-#             d[x][j] = 0
+#         print(d[i][j], end=' ')
+#     print()
 
-#         if d[j][y] == 0:
-#             d[j][y] = 1
-#         else:
-#             d[j][y] = 0
+'''
+부모님과 함께 놀러간 영일이는
+설탕과자(설탕을 녹여 물고기 등의 모양을 만든 것) 뽑기를 보게 되었다.
 
-for i in range(n) :
-    x,y=input().split()
-    for j in range(0, 19) :
-        if d[j][int(y)]==0 :
-            d[j][int(y)-1]=1
-        else :
-            d[j][int(y)]=0
+길이가 다른 몇 개의 막대를 바둑판과 같은 격자판에 놓는데,
 
-        if d[int(x)][j]==0 :
-            d[int(x)][j]=1
-        else :
-            d[int(x)][j]=0
+막대에 있는 설탕과자 이름 아래에 있는 번호를 뽑으면 설탕과자를 가져가는 게임이었다.
+(잉어, 붕어, 용 등 여러 가지가 적혀있다.)
 
 
-for i in range(19):
-    for j in range(19):
-        print(d[i][j], end=' ')
-    print()
+격자판의 세로(h), 가로(w), 막대의 개수(n), 각 막대의 길이(l),
+막대를 놓는 방향(d:가로는 0, 세로는 1)과
+막대를 놓는 막대의 가장 왼쪽 또는 위쪽의 위치(x, y)가 주어질 때,
+
+격자판을 채운 막대의 모양을 출력하는 프로그램을 만들어보자.
+'''
+w, h = map(int, input().split())
+m = []
+for i in range(h):
+    m.append([])
+    for j in range(w):
+        m[i].append(0)
+    
+n = int(input())
+for i in range(n):
+    l, d, x, y = map(int, input().split())
+    for i in range(l):
+        m[x-1][y-1]=0
+
+
