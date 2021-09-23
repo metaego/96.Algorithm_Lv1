@@ -700,5 +700,6 @@ for i in range(n):
     l, d, x, y = map(int, input().split())
     for i in range(l):
         m[x-1][y-1]=0
+        # 모르겠다..일단 보류
 
 
